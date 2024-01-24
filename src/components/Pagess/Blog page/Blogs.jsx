@@ -1,71 +1,33 @@
-import './blogs.css'
-import BlogComponent from '../../Blog Component/BlogComponent'
-import image2 from '../../../assets/Images/Image2.png'
+import "./blogs.css";
+// import BlogComponent from "../../Blog Component/BlogComponent";
+import image2 from "../../../assets/Images/Image2.png";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
-    <section className='allBlogsSection'>
-        <div className="allBlogsHeader">
-            <h1>BLOGS</h1>
+    <section className="allBlogsSection">
+      <div className="allBlogsHeader">
+        <h1>BLOGS</h1>
+      </div>
+      <div className="allBlogsGrid">
+        <div className="blogComponent">
+          <img src={image2} alt="" />
+          <div className="blogsDestName">
+            <h2>Blog name</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              nobis ducimus hic eum deleniti similique et dignissimos, ipsum
+              repellendus, dolorum omnis placeat quia quos. Delectus distinctio
+              quas cumque ipsa soluta!
+            </p>
+          </div>
+          <Link to="/blogDetail">
+            <span>Read more</span>
+          </Link>
         </div>
-        <div className="allBlogsGrid">
-        <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-         <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-         <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-         <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-         <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-         <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-           <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-           <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-           <BlogComponent
-          image={image2}
-          blogName="Blog name"
-          description="Our dedication to secure and ethical IT practices forms the foundation of lasting partnerships built on trust and transparency."
-          readMore="Read more"
-        />
-        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Blogs
+export default Blogs;
