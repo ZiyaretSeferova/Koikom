@@ -1,0 +1,26 @@
+.allBlogsHeader {
+  background-image: linear-gradient(
+      to right,
+      rgba(20, 55, 113, 0.6),
+      rgba(20, 55, 113, 0.6)
+    ),
+    url("../../../assets/Images/backgroundImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  flex-shrink: 0;
+}
+.allBlogsHeader h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.allBlogsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  padding: 56px 5%;
+}
