@@ -14,9 +14,9 @@ const BlogSection = () => {
       </div>
       <div className="sectionMain">
         <div className="blogSectionComponent">
-          <div className="blogComponent">
+          <div className="blogComponentHome">
             <img src={image1} alt="" />
-            <div className="blogsDestName">
+            <div className="blogsDestNameHome">
               <h2>Blog name</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -30,9 +30,9 @@ const BlogSection = () => {
             </Link>
           </div>
 
-          <div className="blogComponent">
+          <div className="blogComponentHome">
             <img src={image3} alt="" />
-            <div className="blogsDestName">
+            <div className="blogsDestNameHome">
               <h2>Blog name</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -46,9 +46,9 @@ const BlogSection = () => {
             </Link>
           </div>
 
-          <div className="blogComponent">
+          <div className="blogComponentHome">
             <img src={image2} alt="" />
-            <div className="blogsDestName">
+            <div className="blogsDestNameHome">
               <h2>Blog name</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -63,11 +63,9 @@ const BlogSection = () => {
           </div>
         </div>
       </div>
-      <div className="buttonSeeAll">
         <Link to="/blogs">
           <button>See all</button>
         </Link>
-      </div>
     </section>
   );
 };

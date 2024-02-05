@@ -10,14 +10,14 @@
   text-align: center;
 }
 .sectionHead h2{
-  font-size: 18px;
+  font-size: 16px;
   color: #c01c25;
   line-height: 21.94px;
   font-weight: 700;
 }
 .sectionHead h1 {
   color: #143771;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   line-height: 48.76px;
 }
@@ -39,11 +39,14 @@
   position: absolute;
   top: 100px;
 }
-.buttonSeeAll {
+/* .buttonSeeAll {
   margin-top: 21%;
   align-self: center;
-}
-.buttonSeeAll button {
+} */
+button {
+  position: absolute;
+  bottom: -100px;
+  
   width: 157.761px;
   height: 42.748px;
   flex-shrink: 0;
@@ -51,13 +54,13 @@
   background: var(--red, #c01c25);
   color: var(--white, #fff);
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
 }
-.blogComponent {
+.blogComponentHome {
   padding: 20px;
   border-radius: 10px;
   background: #fff;
@@ -66,66 +69,109 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 22px;
 }
-.blogComponent img {
+.blogComponentHome img {
   /* width: 384px; */
   width: 100%;
   height: 256px;
 }
-.blogsDestName{
+.blogsDestNameHome{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 11px;
 }
-.blogsDestName h2 {
+.blogsDestNameHome h2 {
   color: #143771;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.blogsDestName p {
+.blogsDestNameHome p {
   color: var(--gray-2, #545f6b);
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.blogComponent span {
+.blogComponentHome span {
   color: var(--gray-2, #545f6b);
   text-align: center;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 19.5px;
   text-decoration-line: underline;
 }
 
 @media screen and (max-width: 450px){
-  /* .sectionHead h2{
+
+  .sectionHead h2{
     font-size: 18px;
-   
   }
   .sectionHead h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .sectionMain {
-    margin-top: 3%;
-    position: relative;
-    width: 100%;
-    height: 600px;
-    border-radius: 10px;
-    background-image: url("../../../assets/Images/backgroundImage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: none;
   }
   .blogSectionComponent {
-   display: flex;
-   flex-direction: column;
-  } */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 0;
+  }
+  .buttonSeeAll {
+    margin-top: 10%;
+    align-self: center;
+  }
+  .buttonSeeAll button {
+    width: 157.761px;
+    height: 42.748px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--red, #c01c25);
+    color: var(--white, #fff);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .blogsDestNameHome h2 {
+    color: #143771;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .blogsDestNameHome p {
+    color: var(--gray-2, #545f6b);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .blogComponentHome span {
+    color: var(--gray-2, #545f6b);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-decoration-line: underline;
+  }
+  .blogComponentHome {
+    gap: 20px;
+  }
 }
